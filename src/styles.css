@@ -351,7 +351,7 @@ h1 em,h2 em { color: #c97f92; font-weight: 500; }
 .finale-copy .eyebrow { justify-content: center; margin-bottom: 9px; }
 .finale-copy h2 { font-size: clamp(40px,5vw,58px); }
 .friendship-ribbons { width: min(430px,82vw); height: 160px; margin: 9px auto 5px; position: relative; }
-.friendship-ribbons svg { width: 100%; height: 100%; overflow: visible; }
+.friendship-ribbons > .friendship-thread { width: 100%; height: 100%; overflow: visible; }
 .satin-thread { animation: thread-glow 3s ease-in-out infinite; }
 .friendship-bow { position: absolute; top: 51px; width: 95px; height: 66px; filter: drop-shadow(0 5px 6px #9e687326); }
 .bow-manall { left: 0; transform: rotate(-12deg); }
@@ -419,4 +419,109 @@ h1 em,h2 em { color: #c97f92; font-weight: 500; }
   .scene-letter { min-height: 500px; height: 76svh; }
   .letter-message { font-size: 18px; }
   .finale-line { font-size: 16px; }
+}
+
+@media (max-width: 760px) {
+  .birthday-world { padding-inline: clamp(14px, 5vw, 24px); }
+  .topbar { height: 68px; flex-basis: 68px; gap: 8px; }
+  .wordmark { gap: 4px; font-size: clamp(13px, 3.8vw, 16px); letter-spacing: -.35px; white-space: nowrap; }
+  .wordmark-icon { font-size: 18px; }
+  .wordmark-for { font-size: clamp(11px, 3.1vw, 13px); }
+  .topbar-right { gap: 7px; flex-shrink: 0; }
+  .date-pill { font-size: 7px; letter-spacing: .45px; white-space: nowrap; }
+  .music-button { min-height: 36px; gap: 6px; padding: 7px 10px; white-space: nowrap; }
+
+  .scene-progress { width: 100%; margin-top: 20px; padding-inline: 3px; }
+  .scene-progress button { min-width: 30px; min-height: 38px; justify-content: center; }
+  .progress-dot { width: 27px; height: 27px; font-size: 8px; }
+  .progress-track { left: 16px; right: 16px; top: 18px; }
+
+  .scene-window { width: 100%; max-width: 100%; min-width: 0; min-height: 0; flex: 1 0 auto; grid-template-columns: minmax(0, 1fr); align-items: start; padding-block: 4px 13px; }
+  .scene { width: 100%; max-width: 100%; min-width: 0; min-height: clamp(550px, calc(100svh - 160px), 680px); align-content: center; }
+  .scene-copy { width: 100%; max-width: 480px; padding-inline: 6px; }
+  .scene-visual { width: 100%; height: clamp(250px, 37svh, 320px); }
+  .scene-visual .visual-caption { bottom: 0; }
+  .gift-art { transform: scale(.76); }
+  .bouquet-art { width: min(335px, 100%); }
+  .eyebrow { font-size: 8px; letter-spacing: 1.35px; gap: 7px; margin-bottom: 12px; }
+  .scene-copy h1, .scene-copy h2 { font-size: clamp(38px, 9.5vw, 53px); line-height: 1.12; letter-spacing: -1.2px; }
+  .scene-description { max-width: 390px; margin: 13px auto 17px; line-height: 1.75; }
+  .scene-copy .primary-button { min-height: 46px; }
+  .under-button { margin-top: 8px; }
+
+  .scene-age { min-height: clamp(550px, calc(100svh - 160px), 680px); }
+  .age-art { height: clamp(260px, 35svh, 310px); width: 100%; }
+  .age-number { font-size: clamp(175px, 48vw, 225px); letter-spacing: -13px; }
+  .orbit-one { width: min(70vw, 250px); height: min(70vw, 250px); }
+  .orbit-two { width: min(82vw, 290px); height: min(82vw, 290px); }
+  .age-side-note { right: 2%; font-size: 15px; }
+  .age-bow { left: 7%; bottom: 4%; }
+  .age-copy .scene-description { margin-top: 12px; }
+  .age-note { font-size: 8px; line-height: 1.5; margin-top: 8px; }
+
+  .scene-balloons { width: 100%; max-width: 100%; min-width: 0; min-height: 0; padding: 18px 0 15px; }
+  .balloon-heading h2 { font-size: clamp(30px, 7.5vw, 39px); }
+  .balloon-heading > p:not(.eyebrow) { font-size: 11px; line-height: 1.5; }
+  .balloon-grid { width: min(520px, 100%); height: clamp(300px, 41svh, 345px); margin-top: 12px; column-gap: 0; row-gap: 2px; }
+  .balloon { width: min(46px, 11vw); height: min(65px, 15vw); }
+  .balloon-string { height: 13px; }
+  .balloon-number { font-size: clamp(13px, 3.8vw, 16px); }
+  .balloon-hint { font-size: 15px; padding: 4px 0 0; }
+  .letter-unlock .primary-button { min-height: 43px; padding: 10px 13px; font-size: 11px; }
+
+  .scene-melody { min-height: 0; padding: 10px 0 4px; gap: 0; }
+  .melody-copy { width: 100%; padding: 0 4px; }
+  .melody-copy .eyebrow { margin-bottom: 5px; }
+  .melody-copy h2 { font-size: clamp(37px, 8.5vw, 49px); }
+  .melody-intro { margin: 5px 0 0; font-size: 15px; }
+  .music-player { width: 100%; min-height: 405px; }
+  .vinyl { width: 155px; height: 155px; left: calc(50% - 158px); top: 5px; }
+  .vinyl-label { width: 63px; height: 63px; }
+  .player-card { width: min(320px, 88%); margin-top: 111px; padding: 18px 20px 13px; }
+  .player-song { font-size: 26px; }
+  .player-bow { right: 0; top: 16%; transform: scale(.72) rotate(12deg); }
+  .player-pearl { display: none; }
+  .music-dedication { max-width: 360px; margin: 8px 8px 7px; font-size: 15px; line-height: 1.35; }
+  .melody-next { min-height: 42px; }
+
+  .scene-letter { width: 100%; height: min(74svh, 760px); min-height: 490px; padding: 13px 10px 18px; }
+  .letter-intro h2 { font-size: clamp(29px, 7.5vw, 38px); }
+  .letter-intro > p:last-child { font-size: 11px; }
+  .envelope { width: min(310px, 82vw); height: 175px; margin-top: 22px; }
+  .envelope.opened .letter-paper { transform: translateY(-84px); }
+  .letter-paper { padding-top: 25px; font-size: 17px; }
+  .letter-message { width: 100%; margin-top: 0; padding-inline: 3px; font-size: clamp(17px, 4.7vw, 19px); line-height: 1.38; text-align: left; }
+  .letter-line { margin: 7px 0; }
+  .letter-line:first-child { font-size: 21px; }
+  .letter-next { min-height: 44px; margin-top: 12px; }
+  .restart-link { min-height: 38px; }
+
+  .scene-finale { min-height: clamp(550px, calc(100svh - 160px), 680px); padding: 12px 0; }
+  .finale-copy { width: 100%; }
+  .finale-copy h2 { font-size: clamp(38px, 9vw, 50px); }
+  .friendship-ribbons { width: min(360px, 88vw); height: 128px; margin-block: 8px 4px; }
+  .friendship-bow { top: 38px; width: 75px; height: 54px; }
+  .ribbon-name { top: 93px; }
+  .ribbon-manall { left: 17px; }
+  .ribbon-sarah { right: 18px; }
+  .ribbon-heart { top: 41px; }
+  .finale-line { padding-inline: 4px; margin: 6px 0; font-size: clamp(15px, 4vw, 17px); line-height: 1.4; }
+  .finale-signoff { margin-top: 11px; font-size: 15px; line-height: 1.45; }
+
+  .page-footer { min-height: 44px; height: auto; flex-basis: 44px; gap: 7px; font-size: 8px; letter-spacing: .3px; }
+  .floating-decor { opacity: .35; }
+}
+
+@media (max-width: 359px) {
+  .birthday-world { padding-inline: 14px; }
+  .date-pill { display: none; }
+  .wordmark { font-size: 14px; }
+  .music-button { padding-inline: 9px; }
+  .scene-progress button { min-width: 28px; }
+  .progress-dot { width: 25px; height: 25px; }
+  .progress-track { left: 14px; right: 14px; }
+  .scene-copy h1, .scene-copy h2 { font-size: 37px; }
+  .balloon-grid { width: 100%; }
+  .balloon { width: min(43px, 12vw); }
+  .player-card { width: 90%; }
 }

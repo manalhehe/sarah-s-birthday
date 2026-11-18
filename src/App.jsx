@@ -218,7 +218,7 @@ function App() {
       <div className="topbar-right">
         <span className="date-pill"><span /> DECEMBER 03, 2026</span>
         <button className={`music-button ${musicOn ? 'playing' : ''}`} onClick={toggleMusic} aria-pressed={musicOn} aria-label={musicOn ? 'Pause background music' : 'Play background music'}>
-          <span className="music-bars"><i/><i/><i/></span> {musicOn ? 'Music on' : 'Play music'}
+          <span className="music-bars"><i/><i/><i/></span><span className="music-button-label">{musicOn ? 'Music on' : 'Play music'}</span>
         </button>
       </div>
     </header>
@@ -371,7 +371,7 @@ function App() {
           <p className="eyebrow"><span>✦</span> UNTIL OUR PATHS CROSS <span>✦</span></p>
           <h2>Until we meet,<br/><em>Sarah ♡</em></h2>
           <div className="friendship-ribbons" aria-label="Two pink ribbons joined by a satin thread">
-            <svg viewBox="0 0 520 230" role="img" aria-hidden="true">
+            <svg className="friendship-thread" viewBox="0 0 520 230" role="img" aria-hidden="true">
               <defs><linearGradient id="thread" x1="0" y1="0" x2="1" y2="0"><stop stopColor="#d98da1"/><stop offset=".5" stopColor="#fae5e5"/><stop offset="1" stopColor="#d98da1"/></linearGradient></defs>
               <path className="satin-thread" d="M92 124C170 77 191 167 260 121s90-91 168-4" fill="none" stroke="url(#thread)" strokeWidth="3" strokeDasharray="4 6"/>
               <circle cx="92" cy="124" r="7" fill="#fff9f6" stroke="#d99aaa" strokeWidth="2"/>
